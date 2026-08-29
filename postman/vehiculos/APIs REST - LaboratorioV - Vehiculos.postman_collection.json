@@ -1,0 +1,161 @@
+{
+  "info": {
+    "_postman_id": "6da77c16-d89d-4f5a-a21e-bf4a7030d3b1",
+    "name": "APIs REST - LaboratorioV - Vehiculos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57632603"
+  },
+  "item": [
+    {
+      "name": "GET vehiculos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET vehiculos-id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST vehiculos",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 6,\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"Chevi\",\r\n    \"anio\": 2021,\r\n    \"precio\": 100000.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT vehiculo",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 4,\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"Camaro\",\r\n    \"anio\": 2023,\r\n    \"precio\": 230000.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH vehiculo",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"precio\": 250000.0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE vehiculo",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/vehiculos/6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "vehiculos",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
