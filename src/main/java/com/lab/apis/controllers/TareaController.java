@@ -26,10 +26,7 @@ public class TareaController {
 
     @GetMapping("/{id}")
     public Tarea obtenerTareaPorId(@PathVariable int id) {
-        return tareas.stream()
-                .filter(t -> t.getId() == id)
-                .findFirst()
-                .orElse(null);
+        return tareas.stream().filter(t -> t.getId() == id).findFirst().orElse(null);
     }
 
     @PostMapping
