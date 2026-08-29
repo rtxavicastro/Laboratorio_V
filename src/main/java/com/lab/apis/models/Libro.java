@@ -31,7 +31,7 @@ public class Libro {
         return genero;
     }
 
-    public Double precio(){
+    public Double getPrecio(){
         return precio;
     }
 
